@@ -1,0 +1,21 @@
+name: "WeeWX"
+description: "WeeWX Home Assistant Add-on"
+version: "1.0.0"
+slug: "weewx"
+init: false
+map:
+  - config:rw
+ports:
+  80/tcp: 4299
+ports_description:
+  80/tcp: Interceptor web server
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+options:
+  config_file: "/config/weewx.conf"
+schema:
+  config_file: str

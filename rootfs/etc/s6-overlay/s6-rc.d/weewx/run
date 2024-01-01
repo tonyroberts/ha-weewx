@@ -1,0 +1,11 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Home Assistant Community Add-on: WeeWX
+# ==============================================================================
+
+WEEWX_CONFIG=$(bashio::config 'config_file')
+bashio::log.info "Starting WeeWX using config file $WEEWX_CONFIG..."
+
+cd /home/weewx/
+python3 ./bin/weewxd $WEEWX_CONFIG

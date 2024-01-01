@@ -1,0 +1,11 @@
+--- logger.py.orig	2024-01-01 16:26:34.980161191 +0000
++++ logger.py	2024-01-01 17:58:11.256110141 +0000
+@@ -28,7 +28,7 @@
+     # Root logger
+     [[root]]
+       level = {log_level}
+-      handlers = syslog,
++      handlers = console,
+ 
+     # Additional loggers would go in the following section. This is useful for tailoring logging
+     # for individual modules.

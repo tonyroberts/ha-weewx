@@ -1,0 +1,9 @@
+configobj
+Pillow
+serial
+pyusb
+pyserial
+paho-mqtt
+Cheetah3
+ephem
+six
